@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 .root {
-    background-image: url(фон.jpg);
+    background-image: url(pages/фон.jpg);
     background-size: cover;
     /*растягивает на весь экран*/
     background-repeat: no-repeat;
