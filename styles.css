@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 .root {
-    background-image: url(pages/фон.jpg);
+    background-image: url(images/фон.jpg);
     background-size: cover;
     /*растягивает на весь экран*/
     background-repeat: no-repeat;
     /*не повторяет*/
+    margin-bottom: 100px;
 }
 
 .info {
@@ -13,7 +14,7 @@
     /*перевели информацию рядом с фото */
 }
 
-.info_image {
+.info__image {
     width: 200px;
     height: 200px;
     margin-right: 40px;
@@ -28,38 +29,29 @@
     /*1 устан.максимальную ширину элемента,2 отступ от каждого края авто,3 величина от верхнего края */
 }
 
-.info_frontend {
-    color: rgb(71, 70, 67);
-    font-style: italic;
+.info__text {
+    color: black;
     font-weight: 700;
-    opacity: .5;
+    font-size: 24px;
+    margin: 0;
 }
-
-.cursor {
-    cursor: pointer;
-}
-
-.info_ok {
+.info__list {
     color: black;
+    font-weight: 700;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.info__link {
+    font-size: 20px;
+    color: red;
     text-decoration: none;
     transition: .3s;
 }
 
-.info_ok:hover {
+.info__link:hover {
     text-decoration: underline;
-    opacity: .5;
-}
-
-.info_tg {
-    color: black;
-    text-decoration: none;
     opacity: .7;
-    transition: .3s;
-}
-
-.info_tg:hover {
-    text-decoration: underline;
-    opacity: 1;
 }
 
 .pole {
