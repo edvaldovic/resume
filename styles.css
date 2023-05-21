@@ -19,6 +19,7 @@
     height: 200px;
     margin-right: 40px;
     border-radius: 20px;
+    object-fit: cover;
     /*1 ширина 2 высота фото 3 устанавливает отступ от правого края "фото" 4 уст.радиус скругления рамки, фото */
 }
 
@@ -35,6 +36,7 @@
     font-size: 24px;
     margin: 0;
 }
+
 .info__list {
     color: black;
     font-weight: 700;
@@ -144,6 +146,7 @@
     border-radius: 20px;
     margin: 0 50px;
     transition: .3s;
+    object-fit: cover;
 }
 
 .container {
@@ -195,4 +198,86 @@
 
 .btn__right:hover {
     opacity: .6;
+}
+
+@media screen and (max-width: 1223px) {
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+} 
+
+    .info__image {
+     margin: 0;
+}
+
+    .heading {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+    .info__text {
+    margin: 0 14px 0 14px;
+    width: calc(100% - 28px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .text {
+    margin: 0 14px 0 14px;
+    width: calc(100% - 28px);
+    font-size: 24px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+    .info__list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+    .info__link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+   .pole {
+   width: 650px;
+    background-color: rgba(132, 154, 147, 0.4);
+    margin-top: 25px;
+    border-radius: 20px;
+    padding: 15px 25px;
+}
+} 
+
+@media screen and (max-width: 767px) {
+
+.container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.btn__right {
+    left: 350px;
+}
+
+.pole {
+    width: 300px;
+     background-color: rgba(132, 154, 147, 0.4);
+     margin: 0 auto;
+     margin-top: 25px;
+     border-radius: 20px;
+     padding: 15px 25px;
+}   
 }
