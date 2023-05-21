@@ -5,9 +5,9 @@ const buttonRight = document.querySelector('.btn__right');
 let position = 0;
 
 function moveImagesLeft() {
-  position += 400;
+  position += 350;
   if (position > 1) {
-    position = -2400;
+    position = -2800;
   }
 
   images.forEach((image) => {
@@ -16,8 +16,8 @@ function moveImagesLeft() {
 }
 
 function moveImagesRight() {
-  position -= 400;
-  if (position < -2400) {
+  position -= 350;
+  if (position < -2800) {
     position = 0;
   }
 
