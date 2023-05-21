@@ -7,7 +7,7 @@ let position = 0;
 function moveImagesLeft() {
   position += 400;
   if (position > 1) {
-    position = -3200;
+    position = -2400;
   }
 
   images.forEach((image) => {
@@ -17,7 +17,7 @@ function moveImagesLeft() {
 
 function moveImagesRight() {
   position -= 400;
-  if (position < -3200) {
+  if (position < -2400) {
     position = 0;
   }
 
@@ -29,3 +29,4 @@ function moveImagesRight() {
 
 buttonLeft.addEventListener('click', moveImagesLeft);
 buttonRight.addEventListener('click', moveImagesRight);
+
