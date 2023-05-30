@@ -3,15 +3,12 @@
 .root {
   background-image: url(images/фон.jpg);
   background-size: cover;
-  /*растягивает на весь экран*/
   background-repeat: no-repeat;
-  /*не повторяет*/
   margin-bottom: 100px;
 }
 
 .info {
   display: flex;
-  /*перевели информацию рядом с фото */
 }
 
 .info__image {
@@ -20,14 +17,12 @@
   margin-right: 40px;
   border-radius: 20px;
   object-fit: cover;
-  /*1 ширина 2 высота фото 3 устанавливает отступ от правого края "фото" 4 уст.радиус скругления рамки, фото */
 }
 
 .page {
   max-width: 750px;
   margin: 0 auto;
   padding-top: 50px;
-  /*1 устан.максимальную ширину элемента,2 отступ от каждого края авто,3 величина от верхнего края */
 }
 
 .info__text {
@@ -47,10 +42,14 @@
 }
 
 .info__link {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   color: rgb(76, 76, 76);
   text-decoration: none;
   transition: 0.3s;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .info__link:hover {
