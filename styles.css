@@ -39,6 +39,7 @@
   font-weight: 700;
   font-size: 24px;
   list-style-type: none;
+  padding: 0;
 }
 
 .info__link {
@@ -242,7 +243,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
   }
 
   .info__link {
