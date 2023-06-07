@@ -20,7 +20,7 @@
 }
 
 .page {
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -31,7 +31,6 @@
   font-size: 24px;
   margin: 0 auto;
   margin-top: 10px;
-  text-align: center;
 }
 
 .info__list {
@@ -40,6 +39,28 @@
   font-size: 24px;
   list-style-type: none;
   padding: 0;
+}
+
+.info__list__text {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.box__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .info__link {
@@ -269,6 +290,10 @@
     overflow: hidden;
     margin: 0 auto;
     margin-top: 25px;
+  }
+
+  .box__img {
+    flex-direction: column;
   }
 
   .btn__right {
